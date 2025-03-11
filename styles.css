@@ -15,6 +15,7 @@ body {
 
 section h2 {
     margin: 30px;
+    font-family: 'Oswald', sans-serif;
 }
 
 section p {
@@ -90,6 +91,7 @@ nav {
     text-align: center;
     padding: 20px 0;
     border-bottom: 2px solid #eaeaea; 
+    font-family: 'Oswald', sans-serif;
 }
 
 nav ul {
@@ -344,6 +346,10 @@ figcaption {
 /* Ajouter un effet de fondu sans décaler l’image */
 #poterie .gallery-item:hover img {
     filter: brightness(0.5); /* Assombrit légèrement l’image au survol */
+}
+
+.text h3 {
+    font-family: 'Oswald', sans-serif;
 }
 
 .text p {
