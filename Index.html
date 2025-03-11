@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="150x150" href="images/logoPage.png">
+    <link rel="shortcut icon" href="images/logoPage.png">
+    <title>KAM Artiste - Peinture & Pyrogravure</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/BannièreH.jpg" alt="Bannière de KAM" class="banner-image">
+    </header>
+
+    <div class="burger-menu">
+        <div class="burger-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-overlay">
+            <div class="close-icon" onclick="toggleMenu()">❌</div>
+            <ul>
+                <li><a href="#presentation" onclick="toggleMenu()">Présentation</a></li>
+                <li><a href="#peinture" onclick="toggleMenu()">Peinture</a></li>
+                <li><a href="#poterie" onclick="toggleMenu()">Poterie</a></li>
+                <li><a href="#etsy" onclick="toggleMenu()">Boutique</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+     
+    <nav>
+        <ul>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#peinture">Peinture</a></li>
+            <li><a href="#poterie">Poterie</a></li>
+            <li><a href="#etsy">Boutique</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="presentation">
+        <div class="container">
+          <div class="text-content">
+            <h2>Présentation</h2>
+            <p>
+                Bienvenue dans ma bulle !<br><br>
+                Je suis Kam, artiste-auteur autodidacte passionnée depuis l’enfance.<br><br>
+                Souvent incomprise, j’ai trouvé mon réconfort dans un univers artistique varié et délicat, 
+                alliant des activités aussi diverses que mon imaginaire le souhaite.<br><br>
+                Je vous partage aujourd’hui un aperçu de mes émotions à travers la peinture, la gravure sur bois 
+                et plus récemment le travail de la terre avec des décorations en argile.<br><br>
+                Il est également possible de me contacter pour des commandes personnalisées.<br><br>
+                <span class="violet">Les dates des prochains marchés artisanaux seront communiquées prochainement.</span>
+            </p>
+          </div>
+          <div class="image-content">
+            <img src="images/Kam4.png" alt="Photo de Kam">
+          </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+    <section id="peinture">
+        <h2>Les peintures</h2>
+        <p>Mes œuvres sont exposées ci-dessous telles un panel d’émotions. J’utilise principalement la peinture acrylique et la peinture à l’huile.<br>
+            Certains de ces tableaux sont actuellement encore disponibles à la vente, uniquement en physique.</p>
+        <div class="gallery-container">
+            <div class="gallery">
+                <figure>
+                    <img src="peintures/Arbre4saisons.png" alt="Oeuvre 1">
+                    <figcaption>Arbre de vie N°3</figcaption>
+                </figure>
+                <figure>
+                    <img src="peintures/TableauRouge.png" alt="Oeuvre 2">
+                    <figcaption>Tel un miroir</figcaption>
+                </figure>
+                <figure>
+                    <img src="peintures/LaPoire.jpg" alt="Oeuvre 3">
+                    <figcaption>La Poire</figcaption>
+                </figure>
+                <figure>
+                    <img src="peintures/Ville nuit.JPG" alt="Oeuvre 4">
+                    <figcaption>Eclaircies de l'ombre</figcaption>
+                </figure>
+                <figure>
+                    <img src="peintures/LesminiaturesPoire.jpg" alt="Oeuvre 5">
+                    <figcaption>Les Miniatures - Poire</figcaption>
+                </figure>
+                <figure>
+                    <img src="peintures/ArbreRouge.jpg" alt="Oeuvre 6">
+                    <figcaption>L'arbre aux feuilles d'or</figcaption>
+                </figure>
+                <figure>
+                    <img src="peintures/LesInséparables.jpg" alt="Oeuvre 7">
+                    <figcaption>Les Inséparables</figcaption>
+                </figure>
+                <figure>
+                    <img src="peintures/Champ.jpg" alt="Oeuvre 8">
+                    <figcaption>Champ de coquelicots</figcaption>
+                </figure>
+                <figure>
+                    <img src="peintures/Mer.jpg" alt="Oeuvre 9">
+                    <figcaption>Grand voyage</figcaption>
+                </figure>
+                <figure>
+                    <img src="peintures/Loeil.JPG" alt="Oeuvre 10">
+                    <figcaption>Vision insoupçonnée</figcaption>
+                </figure>
+                <figure>
+                    <img src="peintures/Utopie.JPG" alt="Oeuvre 11">
+                    <figcaption>Utopie</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+    <section id="poterie">
+        <h2>Les poteries</h2>
+        <p>Les pièces présentées ci-dessous sont vendues exclusivement sur les salons et marchés artisanaux 
+            afin de garantir la qualité du produit. Nous privilégions le circuit court en région bordelaise.</p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img class="img_portfolio" src="poteries/Bijoux.jpg" alt="Poterie 1">
+                <div class="infos">
+                    <div class="text">
+                        <h3>Vide poche bouquet de fleurs</h3>
+                        <p>Socle en argile idéal pour poser des bijoux ou de petits objets.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img class="img_portfolio" src="poteries/Vase.jpg" alt="Poterie 2">
+                <div class="infos">
+                    <div class="text">
+                        <h3>Micro Vase arc fleuri</h3>
+                        <p>Décoration tige artificielle.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img class="img_portfolio" src="poteries/Vase2.jpg" alt="Poterie 3">
+                <div class="infos">
+                    <div class="text">
+                        <h3>Bowl wavy</h3>
+                        <p>Conçu pour décorer ou mettre des petits objets.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img class="img_portfolio" src="poteries/Pot.jpg" alt="Poterie 4">
+                <div class="infos">
+                    <div class="text">
+                        <h3>Pot en argile noire</h3>
+                        <p>Pot pour plante.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img class="img_portfolio" src="poteries/Jeu.jpg" alt="Poterie 5">
+                <div class="infos">
+                    <div class="text">
+                        <h3>Morpion champ de roses</h3>
+                        <p>Idéal pour s'amuser ou décorer une pièce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img class="img_portfolio" src="poteries/Vase3.jpg" alt="Poterie 6">
+                <div class="infos">
+                    <div class="text">
+                        <h3>Vase anneau simple</h3>
+                        <p>Décoration plante artificielle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <div class="separator"></div>
+    <section id="etsy">
+        <h2>Boutique</h2>
+        <div id="etsy-products" class="etsy-container"></div>
+    </section>    
+
+    <div class="separator"></div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/yourformid" method="POST">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        
+            <button type="submit">Envoyer</button>
+        </form>        
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024-2025 KAM - Tous droits réservés.</p>
+            <div class="social-media">
+                <a href="https://www.etsy.com/shop/kamartiist/?etsrc=sdt" target="_blank" aria-label="Etsy de KAM"><img src="images/etsy-logo.png" alt="Etsy"></a>
+                <a href="https://www.instagram.com/kam.artistique?igsh=M3MxMmkxZ3pkNXE5" target="_blank" aria-label="Instagram de KAM"><img src="images/Instagram-logo.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/share/18L1zifTtA/?mibextid=wwXIfr" target="_blank" aria-label="Facebook de KAM"><img src="images/facebook-logo.PNG" alt="Facebook"></a>
+                <a href="https://youtube.com/@kamartistique?si=7KK3nsEp0q7ETAJo" target="_blank" aria-label="Youtube de KAM"><img src="images/youtube-logo.PNG" alt="Youtube"></a>
+            </div>
+        </div>
+    </footer>
+
+<button id="scrollTopBtn" onclick="scrollToTop()">⬆</button>
+</body>
+</html>
