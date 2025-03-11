@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: cursive, Roboto, sans-serif; /* Une police plus moderne et lisible */
+    font-family: Roboto, sans-serif; /* Une police plus moderne et lisible */
     /*background-color: var(--background-color);*/
     color: var(--text-color);
     margin: 0;
@@ -314,7 +314,6 @@ figcaption {
 }
 
 .text p {
-    font-family: cursive, sans-serif;
     font-size: 18px;
 }
 
@@ -367,7 +366,6 @@ figcaption {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease; /* Transition pour un changement de couleur fluide */
-    font-family: cursive;
 }
 
 .shop-item button:hover {
