@@ -717,11 +717,6 @@ footer {
         padding: 10px 15px;
     }
 
-    /* ✅ Ajustement des sections */
-    section {
-        padding: 15px 10px; /* Réduction du padding */
-    }
-
     h2 {
         font-size: 22px; /* Taille plus petite pour les titres */
         text-align: center;
