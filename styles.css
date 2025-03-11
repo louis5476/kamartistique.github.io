@@ -237,6 +237,31 @@ p {
     text-align: center;
 }
 
+.marches {
+    padding-left: 0;
+    list-style: none;
+    margin: 20px auto;
+    max-width: 400px; 
+}
+
+.marches li {
+    position: relative;
+    padding-left: 25px; /* Espace à gauche pour les puces */
+    margin-bottom: 8px;
+    text-align: left; /* Alignement gauche pour les textes des dates */
+}
+
+/* Positionne précisément les puces devant chaque date */
+.marches li::before {
+    content: "•";
+    position: absolute; /* Permet un alignement parfait */
+    left: 0; /* Aligné à gauche */
+    top: 50%; /* Verticalement au centre */
+    transform: translateY(-50%);
+    color: #523efd; /* Couleur identitaire du texte violet */
+    font-weight: bold;
+}
+
 /* Galerie */
 
 .gallery {
