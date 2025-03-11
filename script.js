@@ -13,20 +13,38 @@
 
     document.addEventListener("DOMContentLoaded", function () {
         const scrollTopBtn = document.getElementById("scrollTopBtn");
-
+    
         // Afficher le bouton quand on descend de 200px
         window.addEventListener("scroll", function () {
             if (window.scrollY > 200) {
-                scrollTopBtn.style.display = "block";
+                scrollTopBtn.classList.add('visible'); // ✅ Afficher proprement
             } else {
-                scrollTopBtn.style.display = "none";
+                scrollTopBtn.classList.remove('visible'); // ✅ Masquer proprement
             }
         });
-
-        // Fonction pour remonter la page avec un effet fluide
+    
+        // Fonction pour remonter en haut avec un effet fluide
         window.scrollToTop = function () {
             window.scrollTo({ top: 0, behavior: "smooth" });
         };
+    });    
+
+    // POTEIRE TEXT  --------------------------------------------------------------------------------------------------------------------------------------
+    // Affichage de texte sur clic pour la section poterie
+    document.addEventListener("DOMContentLoaded", function () {
+    const poterieItems = document.querySelectorAll("#poterie .gallery-item");
+
+    poterieItems.forEach((item) => {
+        item.addEventListener("click", function () {
+                // Ferme d'abord tous les autres items ouverts (optionnel mais conseillé)
+                poterieItems.forEach((otherItem) => {
+                    if (otherItem !== item) otherItem.classList.remove("active");
+                });
+
+                // Active ou désactive l'élément cliqué
+                item.classList.toggle("active");
+            });
+        });
     });
 
     // BOUTIQUE ETSY --------------------------------------------------------------------------------------------------------------------------------------
