@@ -611,10 +611,12 @@ footer {
 }
 
 /* Media Queries pour les smartphones */
-@media (max-width: 780px) {
+@media (max-width: 880px) {
 
     .menu-overlay {
-        height: 1000px;
+        /* Par exemple, si tu souhaites augmenter la hauteur ou ajuster le padding */
+        min-height: 100vh;
+        padding-top: 20px; /* Ajuste selon le besoin */
     }
 
     .menu-overlay ul {
