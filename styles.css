@@ -44,11 +44,14 @@ section p {
     justify-content: center;  /* Centre horizontalement */
     align-items: center;      /* Centre verticalement */
     padding: 0;               /* Supprime tout padding inutile */
+    opacity: 0;
+    pointer-events: none;
 }
 
 #scrollTopBtn.visible {
     display: flex; /* Flex pour garder le centrage */
     opacity: 1; /* Rendre visible */
+    pointer-events: auto; /* Active les clics quand visible */
 }
 
 #scrollTopBtn:hover {
